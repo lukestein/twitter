@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>lukestein’s Twitter Archive—№ 3,254</title>
+		<meta name="description" content="@davidmolitor Last tweet in this thread will be to re-up, once again, my suggestion to check out stata_kernel for running Stata code interactively. If you are used to a bunch of selecting lines then Apple-Shift-D (or non-Mac equivalent) this will rock your world. 5/5 https://t.co/oS0WSS4oJZ">
+
+		<link rel="profile" href="https://microformats.org/profile/hatom">
+		<link rel="stylesheet" href="/twitter/assets/style.css">
+		<script src="/twitter/assets/script.js" type="module"></script>
+		<script src="/twitter/assets/is-land.js" type="module"></script>
+
+		
+	</head>
+	<body>
+		<header>
+			<h1 class="tweets-title"><a href="/twitter/"><img src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Flukestein.com%2F/" width="52" height="52" alt="lukestein’s avatar" class="tweet-avatar">lukestein’s Twitter Archive</a>—№ 3,254</h1>
+			
+			<ul class="tweets-nav">
+			<li><a href="/twitter/newest/">⇤ Newest<span class="sr-only"> Tweet</span></a></li>
+			<li><a href="/twitter/1156715879586881537/">⇠ Newer<span class="sr-only"> Tweet</span></a></li>
+			<li><a href="/twitter/1156701949468631041/">Older<span class="sr-only"> Tweet</span> ⇢</a></li>
+		</ul>
+		</header>
+		<main>
+			<ol class="tweets tweets-thread h-feed hfeed" data-pagefind-body="">
+			<ol class="tweets-replies h-feed hfeed"><ol class="tweets-replies"><ol class="tweets-replies"><ol class="tweets-replies"><li id="1156698855087325184" class="tweet h-entry tweet-previous" data-pagefind-index-attrs="id">
+		
+			<div class="tweet-text e-content">Ever since learning how to refer to Stata's labeled values by name (from👇), I've used it a TON and loved it. But today I ran into a sneaky bug in my code, and if you use the "label":valuelabel construction you should understand this and be careful. 1/ <a href="https://twitter.com/AmandaYAgan/status/1126149848548376577" class="tweet-username" data-pagefind-index-attrs="href">@AmandaYAgan/1126149848548376577</a></div>
+			<span class="tweet-metadata">
+				<a href="/twitter/1156698855087325184/" class="tag tag-naked">Permalink</a>
+				<a href="https://twitter.com/lukestein/status/1156698855087325184" class="tag tag-icon u-url" data-pagefind-index-attrs="href"><span class="sr-only">On twitter.com </span><img src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fx.com%2F/" alt="Twitter logo" width="27" height="27"></a>
+				
+				<a href="/twitter/" class="tag tag-naked tag-lite tag-avatar"><img src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Flukestein.com%2F/" width="52" height="52" alt="lukestein’s avatar" class="tweet-avatar"></a>
+				<span class="tag tag-lite tag-retweet">♻️ 11<span class="sr-only"> Retweets</span></span>
+					<span class="tag tag-lite tag-favorite">❤️ 22<span class="sr-only"> Favorites</span></span>
+				<time class="tag tag-naked tag-lite dt-published" datetime="2019-07-31T22:51:12.000Z">2019 Jul 31</time>
+				<span class="tag tag-naked tag-lite sr-only">Mood +<strong class="tweet-sentiment">4</strong> 🙂</span>
+			</span>
+		</li></ol><li id="1156700161424257025" class="tweet h-entry tweet-previous" data-pagefind-index-attrs="id">
+		<a href="/twitter/1156698855087325184/" class="tweet-pretext u-in-reply-to">…in reply to @lukestein</a>
+			<div class="tweet-text e-content">Here's a short snipped that demonstrated the problem. Note that in line 12,
+   if county == "Baltimore":county
+FAILS to find the relevant observation. (The construction in line 20 works fine.) 2/ <is-land on:visible=""><div class="tweet-medias"><a href="/twitter/img/gND0o8WOLL.jpeg"><img src="/twitter/img/gND0o8WOLL.jpeg" width="992" height="1200" alt="oh my god twitter doesn’t include alt text from images in their API" class="tweet-media u-featured" onerror="fallbackMedia(this)" loading="lazy" decoding="async"></a></div></is-land></div>
+			<span class="tweet-metadata">
+				<a href="/twitter/1156700161424257025/" class="tag tag-naked">Permalink</a>
+				<a href="https://twitter.com/lukestein/status/1156700161424257025" class="tag tag-icon u-url" data-pagefind-index-attrs="href"><span class="sr-only">On twitter.com </span><img src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fx.com%2F/" alt="Twitter logo" width="27" height="27"></a>
+				
+				<a href="/twitter/" class="tag tag-naked tag-lite tag-avatar"><img src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Flukestein.com%2F/" width="52" height="52" alt="lukestein’s avatar" class="tweet-avatar"></a>
+				<span class="tag tag-lite tag-retweet">♻️ 3<span class="sr-only"> Retweets</span></span>
+				<time class="tag tag-naked tag-lite dt-published" datetime="2019-07-31T22:56:23.000Z">2019 Jul 31</time>
+				<span class="tag tag-naked tag-lite sr-only">Mood <strong class="tweet-sentiment">-2</strong> 🙁</span>
+			</span>
+		</li></ol><li id="1156701100633812992" class="tweet h-entry tweet-previous" data-pagefind-index-attrs="id">
+		<a href="/twitter/1156700161424257025/" class="tweet-pretext u-in-reply-to">…in reply to @lukestein</a>
+			<div class="tweet-text e-content">The problem can arise when you have more than one numerical value with the same label, like
+    label define county 0 "Baltimore" 1 "Baltimore" 2 "New York"
+
+When Stata sees "Baltimore":county, it evaluates to 0 so misses Baltimore observations with county == 1. 3/ <is-land on:visible=""><div class="tweet-medias"><a href="/twitter/img/OjU_pGDxEZ.jpeg"><img src="/twitter/img/OjU_pGDxEZ.jpeg" width="1180" height="48" alt="oh my god twitter doesn’t include alt text from images in their API" class="tweet-media u-featured" onerror="fallbackMedia(this)" loading="lazy" decoding="async"></a></div></is-land></div>
+			<span class="tweet-metadata">
+				<a href="/twitter/1156701100633812992/" class="tag tag-naked">Permalink</a>
+				<a href="https://twitter.com/lukestein/status/1156701100633812992" class="tag tag-icon u-url" data-pagefind-index-attrs="href"><span class="sr-only">On twitter.com </span><img src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fx.com%2F/" alt="Twitter logo" width="27" height="27"></a>
+				
+				<a href="/twitter/" class="tag tag-naked tag-lite tag-avatar"><img src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Flukestein.com%2F/" width="52" height="52" alt="lukestein’s avatar" class="tweet-avatar"></a>
+				<span class="tag tag-lite tag-retweet">♻️ 3<span class="sr-only"> Retweets</span></span>
+					<span class="tag tag-lite tag-favorite">❤️ 2<span class="sr-only"> Favorites</span></span>
+				<time class="tag tag-naked tag-lite dt-published" datetime="2019-07-31T23:00:07.000Z">2019 Jul 31</time>
+				<span class="tag tag-naked tag-lite sr-only">Mood <strong class="tweet-sentiment">0</strong></span>
+			</span>
+		</li></ol><li id="1156701949468631041" class="tweet h-entry tweet-previous" data-pagefind-index-attrs="id">
+		<a href="/twitter/1156701100633812992/" class="tweet-pretext u-in-reply-to">…in reply to @lukestein</a>
+			<div class="tweet-text e-content">Of course *after* banging my head against the wall and finally figuring out what was going on, I found a Tweet where brilliant <a href="https://twitter.com/davidmolitor/" class="tweet-username h-card">@<span class="p-nickname">davidmolitor</span></a> warns about this and suggests -labelbook- as a way of finding value labels that are not "unique at full length." 4/ <a href="https://twitter.com/davidmolitor/status/1126275796706918400" class="tweet-username" data-pagefind-index-attrs="href">@davidmolitor/1126275796706918400</a></div>
+			<span class="tweet-metadata">
+				<a href="/twitter/1156701949468631041/" class="tag tag-naked">Permalink</a>
+				<a href="https://twitter.com/lukestein/status/1156701949468631041" class="tag tag-icon u-url" data-pagefind-index-attrs="href"><span class="sr-only">On twitter.com </span><img src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fx.com%2F/" alt="Twitter logo" width="27" height="27"></a>
+				
+				<a href="/twitter/" class="tag tag-naked tag-lite tag-avatar"><img src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Flukestein.com%2F/" width="52" height="52" alt="lukestein’s avatar" class="tweet-avatar"></a>
+				<span class="tag tag-lite tag-retweet">♻️ 3<span class="sr-only"> Retweets</span></span>
+					<span class="tag tag-lite tag-favorite">❤️ 3<span class="sr-only"> Favorites</span></span>
+				<time class="tag tag-naked tag-lite dt-published" datetime="2019-07-31T23:03:29.000Z">2019 Jul 31</time>
+				<span class="tag tag-naked tag-lite sr-only">Mood +<strong class="tweet-sentiment">2</strong> 🙂</span>
+			</span>
+		</li></ol>
+			<li id="1156703526061404161" class="tweet h-entry" data-pagefind-index-attrs="id">
+		<a href="/twitter/1156701949468631041/" class="tweet-pretext u-in-reply-to">…in reply to @lukestein</a>
+			<div class="tweet-text e-content" data-pagefind-body=""><a href="https://twitter.com/davidmolitor/" class="tweet-username h-card">@<span class="p-nickname">davidmolitor</span></a> Last tweet in this thread will be to re-up, once again, my suggestion to check out stata_kernel for running Stata code interactively. If you are used to a bunch of selecting lines then Apple-Shift-D (or non-Mac equivalent) this will rock your world. 5/5 <a href="/twitter/1100227720162598913" class="tweet-username" data-pagefind-index-attrs="href">@lukestein/1100227720162598913</a></div>
+			<span class="tweet-metadata">
+				
+				<a href="https://twitter.com/lukestein/status/1156703526061404161" class="tag tag-icon u-url" data-pagefind-index-attrs="href"><span class="sr-only">On twitter.com </span><img src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fx.com%2F/" alt="Twitter logo" width="27" height="27"></a>
+				
+				<a href="/twitter/" class="tag tag-naked tag-lite tag-avatar"><img src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Flukestein.com%2F/" width="52" height="52" alt="lukestein’s avatar" class="tweet-avatar"></a>
+				<span class="tag tag-lite tag-retweet">♻️ 4<span class="sr-only"> Retweets</span></span>
+					<span class="tag tag-lite tag-favorite">❤️ 5<span class="sr-only"> Favorites</span></span>
+				<time class="tag tag-naked tag-lite dt-published" datetime="2019-07-31T23:09:45.000Z">2019 Jul 31</time>
+				<span class="tag tag-naked tag-lite sr-only">Mood <strong class="tweet-sentiment">0</strong></span>
+			</span>
+		</li>
+			
+		</ol>
+		</main>
+		<footer>
+			<p>An open source project from <a href="https://github.com/tweetback">tweetback</a>.</p>
+		</footer>
+	</body>
+</html>
